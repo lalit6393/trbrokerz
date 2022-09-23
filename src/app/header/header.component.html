@@ -1,0 +1,46 @@
+<div class="div1" [class.background]="parentData">
+    <div id="img">
+        <img class="img1" src="../../assets/aa2.png" width="30px" height="30px" rel="logo">
+    </div>
+    <p class="appname"> TR BROKERZ</p>
+    <span class="spacer"></span>
+    <a class="home" href="/home" [class.display]="getData.viewloginButton">Home</a>
+    <a href="/login" [class.display]="getData.viewloginButton">Login</a>
+    <a (click)="signOutFunc()" [class.display]="getData.PageView">Sign out</a>
+    <a href="/getstarted"><span class="getstarted" [class.displayB]="getData.viewGetStartedButton">Get Started</span></a>
+    <div class="image" [class.display]="getData.PageView" (click)="profileClick(profileId)">
+        <img [src]='getData.url' height="40px">
+    </div>
+    <div class="div1-0" [class.displayC]="getData.PageView">
+        <div #profileId class="profile" [class.profileEntry]="boolB">
+            <div class="image">
+                <div class="progileImage">
+                    <img (click)="profileImageClick()" [src]='getData.url' height="100px">
+                </div>
+                <img class="ChangeProfileImage" (click)="file.click()" src="../../assets/edit.png" width="25px" height="25px">
+                <input #file type="file" hidden (change)="uploadImage($event)">
+                <img (click)="threeDot()" class="editFullProfile" src="../../assets/three-dots-vertical.svg" width="20px" height="20px">
+                <div class="editButtonDiv">
+                    <div id="editFullProfile1" (click)="editProfile()" class="editFullProfile1">
+                        <p id="editButton" class="editFullProfile2">Edit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="userName">
+                <p id="userName">{{firstname +' '+ lastname}}</p>
+                <input class="display inputBox" id="inputBox" #ChangeName type="text" placeholder="Name">
+                <span class="display" id="spanVisiblity" style="flex: 1;"></span>
+                <img class="display saveName" id="saveButton" (click)="SaveName(ChangeName)" src="../../assets/check2-square.svg">
+                <!-- <img id="editImage" (click)="editProfile()" src="../../assets/Edit.svg"> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="profileImageClick" [class.display]="noLargeProfileImage">
+    <div class="profileImageClick2">
+        <img [src]="getData.url" height="300px">
+    </div>
+    <div class="profileImageClick2-0" (click)="goBackFromProfile()">
+        <img src="../../assets/x.png" width="25px" height="25px">
+    </div>
+</div>

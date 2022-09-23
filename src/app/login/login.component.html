@@ -1,0 +1,57 @@
+<div class="loginpage">
+    <div class="backgroundBox">
+        <div class="division-1">
+            <div class="logbox">
+                <div class="googlesign">
+                    <p class="signinWithGoogle">Sign up with </p>
+                    <img (click)="redirectToGoogle()" class="icon" src="../../assets/google.png" width="40px" height="40px">
+                </div>
+                <div class="orBox">
+                    <hr>
+                    <div class="or">
+                        <p>or</p>
+                    </div>
+                </div>
+                <div class="namebox">
+                    <input #email type="text" name="email" required>
+                    <p class="name">Email address</p>
+                </div>
+                <div class="passbox">
+                    <input #pass type="password" name="password" required>
+                    <p class="pass">Password</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <p>Remember me</p>
+                    <span style="flex: 1;"></span>
+                    <a href="/resetpass">
+                        <p style="cursor: pointer;">Forgot password?</p>
+                    </a>
+                </div>
+                <div class="logBotton">
+                    <button (click)="Googlelogin(email.value, pass.value)">LOGIN</button>
+                </div>
+                <div class="dontHaveAccountBox">
+                    <p class="dontHaveAccount">Don't have an account?</p>
+                    <a href="/getstarted">
+                        <p class="register">Register</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="division-2">
+            <p>TR BROKERZ</p>
+            <div class="description">
+                <span>Start Earning Today</span>
+            </div>
+        </div>
+    </div>
+
+    <div [class.display]="check" class="Message">
+        <span>{{Message}}</span>
+        <div (click)="onclickicon2()" class="icon2">
+            <img src="../../assets/x.png" width="20px" height="20px">
+        </div>
+
+    </div>
+</div>

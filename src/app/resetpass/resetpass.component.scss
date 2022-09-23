@@ -1,0 +1,429 @@
+* {
+    font-family: roboto, sans-serif;
+}
+
+.loginpage {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 78px 0px 0px 0px;
+    box-sizing: border-box;
+    height: 750px;
+    padding-bottom: 124px;
+    .backgroundBox {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 170px 10px 10px 10px;
+        border-radius: 10px;
+        .division-1 {
+            float: left;
+            box-sizing: border-box;
+            width: 47%;
+            min-width: 463px;
+            display: flex;
+            justify-content: center;
+            padding-left: 30px;
+            .sub-div-1 {
+                width: 100%;
+                max-width: 584px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                border: 1px solid #dadce0;
+                border-radius: 5px;
+                background-color: white;
+            }
+        }
+        .division-2 {
+            float: left;
+            box-sizing: border-box;
+            width: 50%;
+            margin: 0px;
+            padding: 35px 0px 0px 110px;
+            p {
+                text-align: center;
+                font-size: 4em;
+                letter-spacing: -1px;
+                margin: 0px 0px 10px 0px;
+            }
+            .description {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.loginpage::before {
+    content: " ";
+    background: linear-gradient(0deg, #c0dff9, transparent);
+    margin: -93px;
+    height: 770px;
+    width: 98%;
+    position: absolute;
+    transform: skew(-44deg, 0deg);
+    box-sizing: border-box;
+    left: 860px;
+    z-index: 1;
+}
+
+.logbox {
+    float: left;
+    width: 80%;
+    max-width: 584px;
+    height: 288px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.orBox {
+    border: none;
+    position: relative;
+    box-sizing: content-box;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 14px;
+    hr {
+        border: none;
+        position: relative;
+        top: 6px;
+        width: -webkit-fill-available;
+        border-bottom: 1.6px solid #dddde4;
+    }
+    .or {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #575f73;
+        p {
+            margin: 0px;
+            padding: 2px;
+            width: fit-content;
+            box-sizing: border-box;
+            background: white;
+        }
+    }
+}
+
+.checkbox {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 10px;
+    input {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    p {
+        margin: 5px 0px 4px 7px;
+        color: #575f73;
+    }
+}
+
+.namebox {
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 7px;
+    height: 60px;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #aeafb3;
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9375rem;
+        letter-spacing: 0.5px;
+        color: #575f73;
+    }
+}
+
+.fullname {
+    box-sizing: border-box;
+    position: relative;
+    height: 60px;
+}
+
+.firstnamebox {
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 7px;
+    height: 60px;
+    width: 48%;
+    padding-right: 10px;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #aeafb3;
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9375rem;
+        letter-spacing: 0.5px;
+        color: #575f73;
+    }
+}
+
+.lastnamebox {
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 7px;
+    height: 60px;
+    width: 47%;
+    padding-left: 10px;
+    top: -67px;
+    left: 50%;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #aeafb3;
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9375rem;
+        letter-spacing: 0.5px;
+        color: #575f73;
+    }
+}
+
+.passbox {
+    box-sizing: border-box;
+    position: relative;
+    height: 60px;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #aeafb3;
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9375rem;
+        color: #575f73;
+        letter-spacing: 0.5px;
+    }
+}
+
+.googlesign {
+    margin: 10px 0px;
+}
+
+.signinWithGoogle {
+    font-size: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.name,
+.pass {
+    color: #575f73;
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    margin: 0px 0px 1px 0px;
+    transition: all 0.2s linear;
+    background-color: white;
+    padding-top: 2px;
+    width: 50%;
+}
+
+.firstnamebox input:focus+.name,
+.firstnamebox input:valid+.name {
+    font-size: 0.8125rem;
+    color: rgb(123, 0, 139);
+    transform: translateY(-180%);
+}
+
+.lastnamebox input:focus+.name,
+.lastnamebox input:valid+.name {
+    font-size: 0.8125rem;
+    color: rgb(123, 0, 139);
+    transform: translateY(-180%);
+}
+
+.namebox input:focus+.name,
+.namebox input:valid+.name {
+    font-size: 0.8125rem;
+    color: rgb(123, 0, 139);
+    transform: translateY(-180%);
+}
+
+.passbox input:focus+.pass,
+.passbox input:valid+.pass {
+    font-size: 0.8125rem;
+    color: rgb(123, 0, 139);
+    transform: translateY(-180%);
+}
+
+.icon {
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 7px;
+    top: 0px;
+    left: 121px;
+    clear: both;
+    position: absolute;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+    transition: all 0.2s ease;
+}
+
+.icon:hover {
+    box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.20);
+    width: 40.5px;
+    height: 40.5px;
+    transform: translateY(-1px);
+}
+
+.logBotton {
+    display: flex;
+    box-sizing: border-box;
+    button {
+        outline: none;
+        border: none;
+        color: white;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        display: flex;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 24px 0px 10px 0px;
+        cursor: pointer;
+        background-color: #1266f1;
+        transition: all 0.2s ease;
+    }
+    button:hover {
+        background-color: rgb(123, 0, 139);
+        box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 30%);
+        transform: translateY(-2px);
+    }
+}
+
+.dontHaveAccountBox {
+    box-sizing: border-box;
+    display: flex;
+    .dontHaveAccount {
+        margin: 0px;
+        font-size: 0.9375rem;
+        padding: 0px 3px 0px 0px;
+    }
+    .register {
+        margin: 0px;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        padding: 0px 0px 0px 3px;
+        color: #d10404;
+        cursor: pointer;
+    }
+}
+
+.Message {
+    position: absolute;
+    background: darkseagreen;
+    padding: 15px;
+    display: flex;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon2 {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 27px;
+    margin-left: 10px;
+    width: 28px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.display {
+    display: none;
+}
+
+@media screen and (max-width:1064px) and (min-width:964px) {
+    .loginpage {
+        .backgroundBox {
+            .division-2 {
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:965px) and (min-width:451px) {
+    .loginpage {
+        .backgroundBox {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 10px;
+            .division-1 {
+                width: 100%;
+                padding-left: 0px;
+            }
+            .division-2 {
+                width: 100%;
+                padding: 0px 0px 100px 0px;
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .loginpage {
+        .backgroundBox {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0px 10px;
+            .division-1 {
+                width: 100%;
+                min-width: 340px;
+                padding-left: 0px;
+                padding-bottom: 160px;
+                .logbox {
+                    width: 100%;
+                    padding: 10px;
+                    height: 197px;
+                    .googlesign {
+                        margin: 10px 0px;
+                        .signinWithGoogle {
+                            margin: 0px;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .logBotton {
+                        button {
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+            }
+            .division-2 {
+                padding: 0px 0px 100px 0px;
+                width: 100%;
+                p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

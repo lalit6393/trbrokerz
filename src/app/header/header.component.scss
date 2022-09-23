@@ -1,0 +1,310 @@
+.div1 {
+    color: #575f73;
+    border: none;
+    height: 48px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all 0.5s;
+    #img {
+        width: 30px;
+        height: 30px;
+    }
+    .div1-0 {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: center;
+        .profile {
+            position: absolute;
+            border-radius: 8px;
+            min-width: 340px;
+            min-height: 384px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgb(0 0 0 / 29%);
+            box-sizing: border-box;
+            padding: 15px;
+            transition: all 0.3s ease-out;
+            top: 10px;
+            right: -380px;
+            opacity: 10%;
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .progileImage {
+                    border: 1.5px solid;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    height: 100px;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .userName {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 15px;
+            }
+        }
+    }
+}
+
+.display {
+    display: none;
+}
+
+.inputBox {
+    outline: none;
+    border: 1.5px solid #bcb9b9;
+    display: block;
+    margin: 1em 0px;
+    border-radius: 1px;
+    padding: 3px 3px;
+    min-width: 212px;
+    font-size: 15px;
+    color: #193b59;
+}
+
+.saveName {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.div1>.image {
+    margin-left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.div1 {
+    .div1-0 {
+        .profileEntry {
+            right: 0px;
+            opacity: 100%;
+        }
+    }
+}
+
+.div1>.display {
+    display: none;
+}
+
+.div1>a .displayB {
+    display: none;
+}
+
+.div1>.displayC {
+    display: none;
+}
+
+.div1>.div1-0>.profile>.image>.ChangeProfileImage {
+    position: absolute;
+    background: white;
+    top: 61px;
+    left: 186px;
+    border-radius: 5px;
+    padding: 1.5px;
+    box-sizing: border-box;
+}
+
+.editFullProfile {
+    position: absolute;
+    right: 4px;
+    top: 5px;
+}
+
+.editButtonDiv {
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    width: 71px;
+    height: 27px;
+    box-sizing: border-box;
+}
+
+.editFullProfile1 {
+    position: absolute;
+    left: 75px;
+    background-color: black;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.editFullProfile2 {
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.appname {
+    font-size: 154%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+a {
+    margin: 0px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #575f73;
+}
+
+a:hover {
+    color: #465f94;
+}
+
+img {
+    cursor: pointer;
+}
+
+.home {
+    margin-right: 15px;
+}
+
+.getstarted {
+    border: 1px solid #04adf2;
+    color: #04adf2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 1px 0px 15px;
+    cursor: pointer;
+}
+
+.getstarted:hover {
+    color: rgb(123, 0, 139);
+    border-color: rgb(123, 0, 139);
+}
+
+.background {
+    background: transparent;
+    box-shadow: none;
+}
+
+.profileImageClick {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #0000004f;
+    align-items: center;
+    z-index: 1050;
+}
+
+.profileImageClick2 {
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 30px solid white;
+    background-color: white;
+}
+
+.profileImageClick2-0 {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    cursor: pointer;
+}
+
+.display {
+    display: none;
+}
+
+@media screen and (max-width:908px) {
+    .div1 {
+        // padding: 6px;
+        #img {
+            .img1 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:521px) {
+    .profileImageClick2 {
+        width: auto;
+        margin: 10px;
+        max-width: 1000px;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 650px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and (max-width:520px) {
+    .div1 {
+        padding: 6px;
+    }
+    .home {
+        display: none;
+    }
+    .appname {
+        font-size: 100%;
+        font-weight: 600;
+    }
+    a {
+        margin: 0px 10px 0px 0px;
+    }
+    .getstarted {
+        margin: 0px 2px 0px 0px;
+        padding: 8px;
+    }
+    #page::before {
+        width: 606px;
+        height: 746px;
+        left: 3%;
+        transform: skew(-34deg, 0deg);
+    }
+    .profileImageClick2-0 {
+        right: 40px;
+    }
+    .profileImageClick2 {
+        width: auto;
+        margin: 10px;
+        max-width: 1000px;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 650px;
+            box-sizing: border-box;
+        }
+    }
+}

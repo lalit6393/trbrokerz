@@ -1,0 +1,366 @@
+* {
+    font-family: roboto, sans-serif;
+}
+
+.page1 {
+    display: flex;
+    height: 1500px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.page1>.sideNav .div1 {
+    background-color: rgb(232, 132, 132);
+    border-radius: 4px;
+    display: flex;
+    margin: 5px;
+    min-width: 245px;
+    cursor: pointer;
+    p {
+        padding: 10px 0px 10px 10%;
+        margin: 12px;
+        cursor: pointer;
+    }
+    span {
+        flex: 1;
+    }
+    img {
+        padding-right: 25px;
+        box-sizing: border-box;
+        width: 45px;
+        cursor: pointer;
+    }
+}
+
+#following {
+    cursor: pointer;
+}
+
+.div1-0 {
+    border-radius: 4px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+    min-width: 191.5px;
+    p {
+        padding: 7px 10px;
+        margin: 4px;
+        cursor: pointer;
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+    }
+    span {
+        flex: 1;
+    }
+    .imgBox {
+        justify-content: center;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        margin-right: 5px;
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+.forloop {
+    border: 1.5px solid;
+    box-sizing: border-box;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: 5px 18px 5px 33px;
+    background-color: #193b59;
+    position: relative;
+    color: white;
+    min-width: 204.5px;
+}
+
+.sideNav {
+    height: -webkit-fill-available;
+    width: 25%;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border: 1.5px solid #bcb9b9;
+    padding: 5px;
+    border-radius: 4px;
+    min-width: 268.5px;
+}
+
+.mainBox {
+    width: 55%;
+    height: -webkit-fill-available;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #92c5f1, transparent);
+    border: 1.5px solid #bcb9b9;
+    border-radius: 4px;
+    margin: 70px 10px 0px 10px;
+    padding: 10px;
+    min-width: 590.5px;
+}
+
+.addBox {
+    width: 20%;
+    height: -webkit-fill-available;
+    margin-top: 70px;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #fce702, transparent);
+}
+
+.forloop::before {
+    content: " ";
+    background: #15334e;
+    height: 38px;
+    width: 71%;
+    position: absolute;
+    transform: skew(44deg, 0deg);
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.mainBox1-0 {
+    border: 1.5px solid #bcb9b9;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mainBox1-1 {
+    border: 1.5px solid #bcb9b9;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: white;
+    margin-top: 10px;
+    p {
+        margin: 5px 0px;
+    }
+    .messangerProfile {
+        border: 1.5px solid #bcb9b9;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        img {
+            width: auto;
+            height: 38px;
+        }
+    }
+}
+
+.displayFollowed {
+    height: auto;
+    width: auto;
+    height: autoy;
+    overflow: hidden;
+}
+
+.Follow {
+    border: 1.5px solid dodgerblue;
+    margin: 0px;
+    padding: 5px 11px;
+    color: #1266f1;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Follow:hover {
+    color: #7b008b;
+    border-color: #7b008b;
+}
+
+.profile {
+    margin-bottom: 10px;
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.messageProBox {
+    display: flex;
+}
+
+.massengerName {
+    p {
+        margin: 11px 0px 0px 10px;
+    }
+}
+
+.Postmessage {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    textarea {
+        width: 100%;
+        height: 43px;
+        box-sizing: border-box;
+        resize: none;
+        border-radius: 4px;
+        outline: none;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #193b59;
+        transition: all 0.00001ms;
+        border: 1.5px solid #bcb9b9;
+    }
+    p {
+        border: none;
+        color: white;
+        font-size: 0.97rem;
+        box-sizing: border-box;
+        display: flex;
+        width: fit-content;
+        padding: 10px 31px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #1266f1;
+        transition: all 0.2s ease;
+        float: right;
+        margin: 0px 0px 0px 10px;
+        height: 40px;
+    }
+}
+
+.subMainBox1-1 {
+    display: flex;
+    border-bottom: 1.5px solid #bcb9b9;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .Name1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        p {
+            margin: 11px 0px 0px 10px;
+        }
+        img {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .dateTime {
+            p {
+                margin: 0px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+.MessageDate {
+    display: flex;
+    box-sizing: content-box;
+}
+
+.sidebarbutton {
+    position: fixed;
+    z-index: 1100;
+    top: 10px;
+    left: 1px;
+    .img2 {
+        cursor: pointer;
+        width: 39px;
+        height: 39px;
+    }
+}
+
+.sidebar {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    min-height: 500px;
+    left: -310px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 29%);
+    padding: 5px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 300px;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    .div1 {
+        background-color: rgb(232, 132, 132);
+        border-radius: 4px;
+        display: flex;
+        margin: 5px;
+        min-width: 245px;
+        cursor: pointer;
+        p {
+            padding: 10px 0px 10px 10%;
+            margin: 12px;
+            cursor: pointer;
+        }
+        span {
+            flex: 1;
+        }
+        img {
+            padding-right: 25px;
+            box-sizing: border-box;
+            width: 45px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 909px) {
+    .sidebarbutton {
+        display: none;
+    }
+    #sideBar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 908px) {
+    .sideNav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .page1 {
+        padding: 0px;
+    }
+    .sideNav {
+        display: none;
+    }
+    .addBox {
+        display: none;
+    }
+    .mainBox {
+        min-width: -webkit-fill-available;
+        width: 100%;
+        border: none;
+        margin: 70px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="loginpage">
+    <div class="backgroundBox">
+        <div class="division-1">
+            <div class="sub-div-1">
+                <div class="logbox">
+                    <div class="googlesign">
+                        <p class="signinWithGoogle">Create Your Account</p>
+                    </div>
+                    <div class="fullname">
+                        <div class="firstnamebox">
+                            <input #firstName type="text" name="email" required>
+                            <p class="name">First Name</p>
+                        </div>
+                        <div class="lastnamebox">
+                            <input #lastName type="text" name="email" required>
+                            <p class="name">Last Name</p>
+                        </div>
+                    </div>
+                    <div class="namebox">
+                        <input #email type="text" name="email" required>
+                        <p class="name">Email address</p>
+                    </div>
+                    <div class="passbox">
+                        <input #pass type="password" name="password" required>
+                        <p class="pass">Password</p>
+                    </div>
+                    <!-- <div class="checkbox">
+                        <input type="checkbox" name="checkbox">
+                        <p>Remember me</p>
+                        <span style="flex: 1;"></span>
+                        <p style="cursor: pointer;">Forgot password?</p>
+                    </div> -->
+                    <div class="logBotton">
+                        <button (click)="login(email.value, pass.value, firstName.value, lastName.value )">Create Account</button>
+                    </div>
+                    <!-- <div class="dontHaveAccountBox"> -->
+                    <!-- <p class="dontHaveAccount">Don't have an account?</p> -->
+                    <!-- <p class="register">Register</p> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="division-2">
+            <p>TR BROKERZ</p>
+            <div class="description">
+                <span>Start Earning Today</span>
+            </div>
+        </div>
+
+    </div>
+</div>

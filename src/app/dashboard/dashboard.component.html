@@ -1,0 +1,111 @@
+<div id="page" class="page1">
+    <div class="sideNav">
+        <div class="div1">
+            <p>Home</p>
+            <span style="flex:1"></span>
+            <img src="../../assets/house-door.svg">
+        </div>
+        <div class="div1" style="background-color: #84e897;">
+            <p>Answered</p>
+            <span style="flex:1"></span>
+            <img src="../../assets/send.svg">
+        </div>
+        <div class="div1" style="background-color: #fd805b;">
+            <p>Drop Box</p>
+            <span style="flex:1"></span>
+            <img src="../../assets/inbox.svg">
+        </div>
+        <div (click)="followed()" class="div1" id="following" (click)="dropDown()">
+            <p>Following</p>
+            <span style="flex:1"></span>
+            <img src="../../assets/people.svg">
+        </div>
+        <div id="displayFollow" class="displayFollowed">
+            <div class="forloop" *ngFor="let followArray of following">
+                <div class="div1-0">
+                    <p>{{followArray.name}}</p>
+                    <span style="flex:1"></span>
+                    <div class="imgBox">
+                        <img [src]="followArray.photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div class="mainBox1-0">
+            <div class="messageProBox">
+                <div class="profile">
+                    <img [src]="getData.url">
+                </div>
+                <div class="massengerName">
+                    <p>{{getData.FirstName +' '+ getData.LastName}}</p>
+                </div>
+            </div>
+            <div class="Postmessage">
+                <textarea #textera name="message" id="" placeholder="Write here"></textarea>
+                <p (click)="postMassage(textera.value)">Post</p>
+            </div>
+        </div>
+        <div class="mainBox1-1" *ngFor="let newmethod of arrayitm; index as i">
+            <div class="subMainBox1-1">
+                <div class="messangerProfile">
+                    <img [src]="newmethod.Photo">
+                </div>
+                <div class="Name1">
+                    <p>{{newmethod.Name}}</p>
+                    <p [id]="i" (click)="GoingToFollow(newmethod.email, i)" class="Follow">Follow</p>
+                    <span style="flex: 1;"></span>
+                    <div class="dateTime">
+                        <p>{{newmethod.Date+'/'+newmethod.Month + '/' + newmethod.FullYear}}</p>
+                        <p>{{newmethod.Hours + ':' + newmethod.Minutes}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="MessageDate">
+                <div class="message">
+                    <p>{{newmethod.message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addBox">
+    </div>
+</div>
+
+<div (click)="sidebarView()" class="sidebarbutton">
+    <img class="img2" src="../../assets/list.svg" width="30px" height="30px" rel="logo">
+</div>
+<div id="sideBar" class="sidebar">
+    <div class="div1">
+        <p>Home</p>
+        <span style="flex:1"></span>
+        <img src="../../assets/house-door.svg">
+    </div>
+    <div class="div1" style="background-color: #84e897;">
+        <p>Answered</p>
+        <span style="flex:1"></span>
+        <img src="../../assets/send.svg">
+    </div>
+    <div class="div1" style="background-color: #fd805b;">
+        <p>Drop Box</p>
+        <span style="flex:1"></span>
+        <img src="../../assets/inbox.svg">
+    </div>
+    <div (click)="followed()" class="div1" id="following" (click)="dropDown()">
+        <p>Following</p>
+        <span style="flex:1"></span>
+        <img src="../../assets/people.svg">
+    </div>
+    <div id="displayFollow2" class="displayFollowed">
+        <div class="forloop" *ngFor="let followArray of following">
+            <div class="div1-0">
+                <p>{{followArray.name}}</p>
+                <span style="flex:1"></span>
+                <div class="imgBox">
+                    <img [src]="followArray.photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
